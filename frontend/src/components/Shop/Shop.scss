@@ -1,0 +1,96 @@
+@import "../css-config/mix-in.scss";
+@import "../style.scss";
+
+
+
+.shop{
+    background-color: white;
+
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: center;
+    padding-block: 50px;
+}
+.content{
+    width: 30%;
+    margin: 15px;
+    box-sizing: border-box;
+    flex: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+img{
+    
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
+}
+p{
+    text-align: center;
+    color: var(--first-color);
+    padding-top: 0 8px;
+    width: 360px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    align-items: center;
+    margin-inline: auto;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: var(--first-color);
+    margin: 0;
+}
+button{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+
+
+}
+.shop-1{
+    background: var(--white-color);
+    color: var(--first-color);
+    font-family: var(--second-font);
+    background-color: var(--second-color);
+}
+
+
+@media(max-width:1000px){
+    .content{
+        width: 45%;
+    }
+}
+@media(max-width:750px){
+    .content{
+        width: 100%;
+    }
+}
+}

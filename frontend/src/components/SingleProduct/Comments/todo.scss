@@ -1,0 +1,92 @@
+@import "../../css-config/mix-in.scss";
+@import "../../style.scss";
+
+.todoform{
+    display: flex;
+    flex-direction: column;
+    padding-inline:20px;
+
+    textarea{
+        width:100%;
+        height:auto;
+        color:var(--first-color-alt);
+        background-color: white;
+        margin-inline:auto;
+        padding:0.5em;
+        border-radius:10px;
+        outline: none;
+        border: 3px solid var(--first-color-light);
+        font-family: 'Heebo', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+        resize: none
+        
+    }::-webkit-scrollbar {
+        display: none;
+      }
+      button{
+        margin-inline:auto;
+        margin-top: 10px;
+       
+        height: 7vh;
+        text-align: center;
+        line-height:1.3;
+        background-color: var(--first-color);
+        color: white;
+        border-radius:25px;
+        font-weight: 600;
+        font-size: medium;
+        font-family: var(--body-font);
+        border:0;       
+        outline: transparent;
+        
+        -webkit-user-select: none;
+        user-select: none;
+        
+        &:hover{
+            background-color:var(--first-color-light); 
+        }
+        &:active{
+           background-color:var(--first-color-alt); 
+        }
+       @include sm{
+        padding-inline: 2em;
+       }
+        
+    
+    }
+    .eta{
+        margin-top:10px;
+    }
+}
+
+.toddo{
+    
+    padding-inline:20px;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    h1{
+        font-size:1.3rem;
+    }
+    p{
+        position: relative;
+        top:-7px;
+        word-wrap: break-word;
+        @include sm{
+            max-width: 200px;
+        }
+    }
+    .delete{
+        position: absolute;
+        right:6%;
+       top:30%;
+    }
+    .edit{
+        margin-top:-8px;
+        margin-bottom: 3px;
+    }
+
+}

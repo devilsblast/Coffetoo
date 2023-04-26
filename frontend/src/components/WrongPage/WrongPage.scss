@@ -1,0 +1,12 @@
+.wrongpage{
+    height:1200px;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.hi {
+    cursor: pointer;
+
+&:hover{
+    color: orange;
+}
+}
